@@ -1,0 +1,59 @@
+<!-- Change background color-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change background color</title>
+</head>
+<style>
+    #gray{
+        width: 20px;
+        height: 20px;
+        background-color: gray;
+        color: white;
+        padding: 10px;
+        border: 1px solid black; 
+    }
+    #white{
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        color: white;
+        padding: 10px;
+        border: 1px solid black; 
+    }
+    #yellow{
+        width: 20px;
+        height: 20px;
+        background-color: yellow;
+        color: white;
+        padding: 10px;
+        border: 1px solid black; 
+    }
+</style>
+<body style="padding: 10px;">
+    <span class="button" id="gray">Gray</span>
+    <span class="button" id="white">White</span>
+    <span class="button" id="yellow">Yellow</span>
+
+</body>
+<script>
+    const buttons = document.querySelectorAll('.button')
+    const body = document.querySelector("body")
+   
+    buttons.forEach(function (button){
+        button.addEventListener("click",(e)=>{
+            if(e.target.id == 'gray'){
+                body.style.backgroundColor = "gray"
+            }
+            if(e.target.id == 'white'){
+                body.style.backgroundColor = "white"
+            }
+            if(e.target.id == 'yellow'){
+                body.style.backgroundColor = "yellow"
+            }
+        });
+    });
+</script>
+</html>

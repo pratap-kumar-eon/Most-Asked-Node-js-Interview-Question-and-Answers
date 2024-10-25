@@ -1,0 +1,45 @@
+// Q-Program to check frequency of elements in array   Array = [1,2,1,3,4,2]
+
+function checkFreq(arr){
+    let freqArr = {};
+    
+    arr.forEach((ele)=>{
+        freqArr[ele] = (freqArr[ele] || 0) + 1;
+    })
+    
+    return freqArr;
+}
+
+array = [1,2,1,3,4,2];
+
+const res = checkFreq(array);
+
+console.log(res)
+
+output - 
+{ 
+'1': 2, 
+'2': 2, 
+'3': 1, 
+'4': 1 
+}
+
+
+// Q- 
+const user = {age:20}
+user.age=30
+console.log(user.age)
+
+
+output - 30 (const value can't be overwritten but a object value can overwriten)
+
+
+// Q-3
+
+let arr=[1,2,3,4,5]
+
+let result =  arr.reduce((acc,init)=>acc+init,0)
+
+console.log(result)
+
+output - 15
