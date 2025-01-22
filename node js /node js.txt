@@ -1,0 +1,19 @@
+sudo mongod --config /etc/mongod.conf
+sudo systemctl start mongod
+
+mongo
+
+Event Driven Architecture
+-----------------------------
+
+EDA is a system design patten where systems communicate and react eevnt asynchronosouly 
+
+
+Role and Responsibility
+-----------------------------
+
+*"As a Node.js Developer, I design and develop backend services using Express.js and Nest.js, ensuring scalable and efficient API structures. I work with both SQL and NoSQL databases, optimizing queries and implementing caching strategies. Security is a priority, so I implement JWT authentication, role-based access control, and protection against common vulnerabilities like SQL injection and XSS.
+
+I also focus on performance improvements, using worker threads and clustering for better concurrency. Additionally, I integrate unit tests with Jest and automate deployments with Docker and CI/CD pipelines.
+
+By optimizing API performance and reducing database load, I helped decrease response times by 40%, enhancing user experience. I enjoy solving backend challenges and building high-performance applications."*
